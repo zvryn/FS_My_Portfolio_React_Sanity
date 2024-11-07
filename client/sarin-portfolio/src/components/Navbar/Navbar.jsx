@@ -1,7 +1,11 @@
 import "./Navbar.scss";
 
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return (
+    <nav>
+      <div></div>
+    </nav>
+  );
 };
 
 export default Navbar;
