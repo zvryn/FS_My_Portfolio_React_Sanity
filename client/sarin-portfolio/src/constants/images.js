@@ -19,6 +19,8 @@ import react from "../assets/react.png";
 import scss from "../assets/scss.png";
 import student from "../assets/student.png";
 import tailwind from "../assets/tailwind.png";
+import mern from "../assets/mern.png";
+import hero from "../assets/hero.png";
 
 export default {
   canva,
@@ -42,4 +44,6 @@ export default {
   scss,
   student,
   tailwind,
+  mern,
+  hero,
 };

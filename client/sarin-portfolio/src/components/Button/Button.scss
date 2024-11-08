@@ -1,0 +1,20 @@
+.app__button {
+  background-color: #ff2c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 35px;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  font-weight: normal;
+  width: 150px;
+  height: 40px;
+
+  &:hover {
+    background-color: #ff7e7e;
+  }
+  a {
+    text-decoration: none;
+  }
+}

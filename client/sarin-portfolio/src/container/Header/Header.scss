@@ -1,0 +1,82 @@
+.app__header {
+  padding: 100px 30px 0px 30px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
+
+  @media screen and (min-width: 700px) {
+    padding: 100px 100px 0px 100px;
+    h4 {
+      font-size: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    padding: 100px 100px 0px 100px;
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+.app__header__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 1000px) {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.app__header__tech {
+  img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    @media screen and (min-width: 1000px) {
+      width: 400px;
+      height: auto;
+    }
+  }
+}
+
+.app__header-hero {
+  img {
+    object-fit: cover;
+    object-position: center;
+    width: auto;
+    height: 600px;
+    @media screen and (min-width: 1000px) {
+      border-radius: 20px;
+      margin-left: 100px;
+    }
+  }
+}

@@ -3,10 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid black;
   position: fixed;
   z-index: 2;
@@ -41,7 +41,7 @@
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        color: var(--secondary-color);
+        color: #ff7e7e;
       }
     }
   }
@@ -79,7 +79,7 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
 
     svg {
@@ -110,7 +110,7 @@
           transition: all 0.3s ease-in-out;
 
           &:hover {
-            color: var(--secondary-color);
+            color: #ff7e7e;
           }
         }
       }
