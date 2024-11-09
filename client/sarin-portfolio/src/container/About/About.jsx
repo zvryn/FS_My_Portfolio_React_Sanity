@@ -2,35 +2,16 @@ import "./About.scss";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { images } from "../../constants";
-
-const abouts = [
-  {
-    title: "Frontend Development",
-    description:
-      "A sharp attention to detail and a keen eye for design, ensuring that every element of the website is precise and visually appealing. ",
-    imgUrl: images.owl,
-  },
-  {
-    title: "Backend Development",
-    description:
-      "A strong understanding of database management and server architectures. Focus on optimizing performance, maintaining data integrity, and implementing robust security measures.",
-    imgUrl: images.octopus,
-  },
-  {
-    title: "Fullstack Development",
-    description:
-      "Versatile, problem-solving, and able to collaborate across all aspects of development to deliver seamless, scalable solutions.",
-    imgUrl: images.lion,
-  },
-  {
-    title: "UX/UI",
-    description:
-      "Creating intuitive, visually appealing interfaces that enhance usability and accessibility.",
-    imgUrl: images.butterfly,
-  },
-];
+import { urlFor, client } from "../../client";
 
 const About = () => {
+  const [abouts, setAbouts] = useState([]);
+  useEffect(() => {
+    const query = '*[_type=="abouts"]';
+    client.fetch(query).then((data) => {
+      setAbouts(data);
+    });
+  }, []);
   return (
     <>
       <h2 className="head-text">
@@ -48,7 +29,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={about.imgUrl} alt={about.title} />
+            <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="bold-text" style={{ marginTop: "20px" }}>
               {about.title}
             </h2>
