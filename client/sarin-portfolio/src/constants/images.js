@@ -21,6 +21,10 @@ import student from "../assets/student.png";
 import tailwind from "../assets/tailwind.png";
 import mern from "../assets/mern.png";
 import hero from "../assets/hero.png";
+import owl from "../assets/owl.png";
+import octopus from "../assets/octopus.png";
+import lion from "../assets/lion.png";
+import butterfly from "../assets/butterfly.png";
 
 export default {
   canva,
@@ -46,4 +50,8 @@ export default {
   tailwind,
   mern,
   hero,
+  owl,
+  octopus,
+  lion,
+  butterfly,
 };

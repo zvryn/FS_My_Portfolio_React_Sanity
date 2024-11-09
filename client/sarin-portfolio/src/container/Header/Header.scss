@@ -61,8 +61,8 @@
     width: 80%;
     height: auto;
     margin-top: 20px;
-    @media screen and (min-width: 1000px) {
-      width: 400px;
+    @media screen and (min-width: 700px) {
+      width: 300px;
       height: auto;
     }
   }
@@ -74,9 +74,11 @@
     object-position: center;
     width: auto;
     height: 600px;
+    margin-bottom: 2rem;
     @media screen and (min-width: 1000px) {
       border-radius: 20px;
       margin-left: 100px;
+      margin-bottom: 13rem;
     }
   }
 }
