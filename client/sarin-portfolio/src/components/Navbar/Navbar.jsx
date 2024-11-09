@@ -1,10 +1,19 @@
 import "./Navbar.scss";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+
+  useEffect(() => {
+    if (toggle) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+    return () => document.body.classList.remove("no-scroll");
+  }, [toggle]);
 
   return (
     <nav className="app__navbar">
@@ -30,7 +39,9 @@ const Navbar = () => {
             <ul>
               {["home", "about", "work", "skills", "contact"].map((item) => (
                 <li key={item}>
-                  <a href={`#${item}`}>{item}</a>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
+                  </a>
                 </li>
               ))}
             </ul>

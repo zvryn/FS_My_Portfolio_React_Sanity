@@ -129,7 +129,7 @@
 
     &:hover {
       background-color: var(--hover-color);
-      border-color: var(--secondary-color);
+      border-color: var(--hover-color);
 
       svg {
         color: var(--white-color);
@@ -187,4 +187,8 @@
   .copyright {
     display: none;
   }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
