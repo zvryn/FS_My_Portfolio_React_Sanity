@@ -22,7 +22,7 @@
   }
 
   @media screen and (min-width: 700px) {
-    padding: 100px 100px 0px 100px;
+    padding: 100px 0px 0px 0px;
     h4 {
       font-size: 2rem;
     }
@@ -35,7 +35,7 @@
   }
 
   @media screen and (min-width: 1000px) {
-    padding: 100px 100px 0px 100px;
+    padding: 100px 0px 0px 0px;
     flex-direction: row;
     text-align: left;
   }
@@ -58,7 +58,7 @@
 
 .app__header__tech {
   img {
-    width: 80%;
+    width: 250px;
     height: auto;
     margin-top: 20px;
     @media screen and (min-width: 700px) {
@@ -78,7 +78,6 @@
     @media screen and (min-width: 1000px) {
       border-radius: 20px;
       margin-left: 100px;
-      margin-bottom: 13rem;
     }
   }
 }

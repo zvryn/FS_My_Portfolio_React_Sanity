@@ -1,5 +1,6 @@
-import "./Button.scss";
+/* eslint-disable react/prop-types */
 
+import "./Button.scss";
 const Button = (props) => {
   return (
     <div className="app__button">

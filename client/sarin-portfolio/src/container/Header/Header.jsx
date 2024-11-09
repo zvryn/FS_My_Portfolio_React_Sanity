@@ -2,6 +2,7 @@ import "./Header.scss";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 import { Button } from "../../components";
+import { AppWrap } from "../../wrapper";
 
 const Header = () => {
   return (
@@ -49,4 +50,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AppWrap(Header, "home");
