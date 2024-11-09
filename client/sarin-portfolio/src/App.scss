@@ -40,7 +40,6 @@
 .copyright {
   width: 100%;
   padding: 2rem 0 0;
-
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -100,11 +99,16 @@
 
 .app__social {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
   gap: 10px;
-  padding: 0px 0px 50px 50px;
+  padding: 0px 0px 150px 50px;
+  margin-right: 50px;
+
+  @media screen and (min-width: 1000px) {
+    padding: 0px 0px 50px 50px;
+  }
 
   div {
     width: 40px;
