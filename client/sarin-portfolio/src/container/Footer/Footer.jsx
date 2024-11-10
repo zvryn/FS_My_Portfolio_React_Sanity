@@ -6,7 +6,8 @@ import { BsInstagram, BsLinkedin } from "react-icons/bs";
 
 import "./Footer.scss";
 
-const RESUME_FILE_URL = "http://localhost:5173/resume.pdf";
+const RESUME_FILE_URL =
+  "https://drive.google.com/uc?export=download&id=1KUJNJPHniDuh6MzOcj5CDRMn-QtzTs5O";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -43,14 +44,14 @@ const Footer = () => {
       .catch((err) => console.log(err));
   };
 
-  const downloadFileAtURL = (url) => {
+  const downloadFile = () => {
+    const url = RESUME_FILE_URL;
     const fileName = "resume_sarin.pdf";
     const aTag = document.createElement("a");
     aTag.href = url;
     aTag.setAttribute("download", fileName);
     document.body.appendChild(aTag);
     aTag.click();
-    aTag.remove();
     document.body.removeChild(aTag);
   };
 
@@ -82,11 +83,9 @@ const Footer = () => {
         <div className="app__footer-card">
           <img src={images.resume} alt="resume" />
           <a
-            onClick={() => {
-              downloadFileAtURL(RESUME_FILE_URL);
-            }}
+            onClick={downloadFile}
             className="p-text"
-            style={{ color: "black" }}
+            style={{ color: "black", cursor: "pointer" }}
           >
             Download My Resume
           </a>
