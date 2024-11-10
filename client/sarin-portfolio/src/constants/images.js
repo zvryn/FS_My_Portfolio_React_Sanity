@@ -27,6 +27,7 @@ import lion from "../assets/lion.png";
 import butterfly from "../assets/butterfly.png";
 import email from "../assets/email.svg";
 import phone from "../assets/phone.svg";
+import resume from "../assets/resume.svg";
 
 export default {
   canva,
@@ -58,4 +59,5 @@ export default {
   butterfly,
   email,
   phone,
+  resume,
 };

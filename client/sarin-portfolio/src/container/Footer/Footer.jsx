@@ -3,7 +3,10 @@ import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { client } from "../../client";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
+
 import "./Footer.scss";
+
+const RESUME_FILE_URL = "http://localhost:5173/resume.pdf";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -40,6 +43,17 @@ const Footer = () => {
       .catch((err) => console.log(err));
   };
 
+  const downloadFileAtURL = (url) => {
+    const fileName = "resume_sarin.pdf";
+    const aTag = document.createElement("a");
+    aTag.href = url;
+    aTag.setAttribute("download", fileName);
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+    document.body.removeChild(aTag);
+  };
+
   return (
     <>
       <h2 className="head-text">Take a coffee & chat with me</h2>
@@ -63,6 +77,18 @@ const Footer = () => {
             style={{ color: "black" }}
           >
             +66 80-730-2780
+          </a>
+        </div>
+        <div className="app__footer-card">
+          <img src={images.resume} alt="resume" />
+          <a
+            onClick={() => {
+              downloadFileAtURL(RESUME_FILE_URL);
+            }}
+            className="p-text"
+            style={{ color: "black" }}
+          >
+            Download My Resume
           </a>
         </div>
       </div>
@@ -106,6 +132,7 @@ const Footer = () => {
           <h3 className="head-text">Thank you for getting in touch!</h3>
         </div>
       )}
+
       <div className="app__footer-end">
         <div className="app__footer-social">
           <div>
