@@ -1,6 +1,6 @@
 import canva from "../assets/canva.webp";
 import css from "../assets/css.png";
-import express from "../assets/express.jpg";
+import express from "../assets/express.png";
 import figma from "../assets/figma.png";
 import git from "../assets/git.png";
 import drilling from "../assets/drilling.jpg";
@@ -9,7 +9,7 @@ import headshotblack from "../assets/headshotblack.jpeg";
 import headshotwhite from "../assets/headshotwhite.jpeg";
 import html from "../assets/html.png";
 import javascript from "../assets/javascript.png";
-import mongodb from "../assets/mongodb.png";
+import mongodb from "../assets/mongodb.webp";
 import nodejs from "../assets/nodejs.png";
 import olympiad from "../assets/olympiad.png";
 import postgresql from "../assets/postgresql.png";

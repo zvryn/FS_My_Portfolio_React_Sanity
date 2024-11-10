@@ -106,12 +106,14 @@ const Work = () => {
               >
                 {work.title}
               </h4>
-              <p className="p-text" style={{ marginTop: 10 }}>
+              <p className="p-text" style={{ marginTop: 10, color: "black" }}>
                 {work.description}
               </p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
+                <p className="p-text" style={{ color: "black" }}>
+                  {work.tags[0]}
+                </p>
               </div>
             </div>
           </div>
