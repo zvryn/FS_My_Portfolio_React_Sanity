@@ -146,15 +146,27 @@ const Footer = () => {
       <div className="app__footer-end">
         <div className="app__footer-social">
           <div>
-            <BsInstagram />
+            <a
+              href="https://www.instagram.com/myjaypeg/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsInstagram />
+            </a>
           </div>
           <div>
-            <BsLinkedin />
+            <a
+              href="https://www.linkedin.com/in/sarin-kanokyuraphan-62b7b5306/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <BsLinkedin />
+            </a>
           </div>
         </div>
         <div className="app__footer-copyright">
           <p className="p-text">@2024 SARIN</p>
-          <p className="p-text">All rights reserved</p>
+          <p className="p-text">All RIGHTS RESERVED</p>
         </div>
       </div>
     </>
