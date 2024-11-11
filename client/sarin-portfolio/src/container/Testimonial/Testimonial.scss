@@ -7,7 +7,7 @@
 .app__testimonial-item {
   width: 60%;
   min-height: 320px;
-  background-color: var(--white-color);
+  background-color: white;
   display: flex;
   flex-direction: row;
   padding: 2rem;
@@ -55,7 +55,7 @@
   p {
     font-size: 1.25rem;
     line-height: 2rem;
-    color: var(--black-color);
+    color: black;
     font-family: var(--font-base);
 
     @media screen and (min-width: 2000px) {
@@ -66,13 +66,14 @@
 
   h4 {
     font-weight: 600;
-    color: var(--secondary-color);
+    color: var(--red-color);
     margin-top: 2rem;
   }
 
   h5 {
     font-weight: 400;
-    color: var(--gray-color);
+    color: black;
+    font-weight: 300;
     margin-top: 5px;
   }
 
@@ -90,7 +91,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--white-color);
+    background-color: white;
 
     margin: 1rem;
     transition: all 0.3s ease-in-out;
@@ -99,7 +100,6 @@
     svg {
       width: 20px;
       height: 20px;
-      color: var(--secondary-color);
     }
 
     &:hover {

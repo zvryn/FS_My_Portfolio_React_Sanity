@@ -25,7 +25,9 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="head-text">Skills & Experiences</h2>
+      <h2 className="head-text">
+        Skills & <span>Experiences</span>
+      </h2>
 
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -63,8 +65,10 @@ const Skills = () => {
                       data-tooltip-id={work.name}
                     >
                       <h4 className="bold-text">{work.name}</h4>
-                      <p className="p-text">{work.company}</p>
-                      <p className="p-text" style={{ fontWeight: "200" }}>
+                      <p className="p-text" style={{ fontWeight: "300" }}>
+                        {work.company}
+                      </p>
+                      <p className="p-text" style={{ fontWeight: "100" }}>
                         {work.desc}
                       </p>
                     </motion.div>

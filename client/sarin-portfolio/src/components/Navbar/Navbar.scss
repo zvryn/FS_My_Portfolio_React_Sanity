@@ -79,7 +79,12 @@
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url("../../assets/hero.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: color-burn;
     box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
 
     svg {

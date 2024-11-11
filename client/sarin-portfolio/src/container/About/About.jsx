@@ -15,9 +15,9 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I Believe That <span>Great Development</span>
+        <span>Great Development</span>
         <br />
-        Drives <span>Business Success</span>
+        Drives Business Success
       </h2>
 
       <div className="app__profiles">

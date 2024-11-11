@@ -36,10 +36,10 @@ const Work = () => {
   return (
     <>
       <h2 className="head-text">
-        My Creative <span>Portfolio</span> Section
+        My <span>Portfolio</span> Section
       </h2>
       <div className="app__work-filter">
-        {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
+        {["UI/UX", "Frontend", "Backend", "Fullstack", "All"].map(
           (item, index) => (
             <div
               key={index}
