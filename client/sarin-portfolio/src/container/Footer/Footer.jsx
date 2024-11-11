@@ -26,6 +26,17 @@ const Footer = () => {
   };
 
   const handleSubmit = () => {
+    if (!formData.username || !formData.email || !formData.message) {
+      alert("All fields are required.");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
     setLoading(true);
 
     const contact = {

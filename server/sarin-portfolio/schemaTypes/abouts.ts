@@ -23,6 +23,12 @@ const abouts: SchemaTypeDefinition = {
         hotspot: true,
       },
     },
+    {
+      name: 'createdAt',
+      title: 'Created At',
+      type: 'datetime',
+      initialValue: () => new Date().toISOString(),
+    },
   ],
 }
 

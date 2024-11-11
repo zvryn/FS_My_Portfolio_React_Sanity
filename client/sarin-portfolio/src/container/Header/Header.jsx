@@ -15,8 +15,9 @@ const Header = () => {
           <h4>👋 Hi I am Jay.</h4>
           <h1>Full Stack Developer</h1>
           <p>
-            I possess a comprehensive skill set that spans <br />
-            both front-end, back-end development.
+            Building comprehensive, full-stack solutions <br />
+            that prioritize your vision and deliver <br />a seamless user
+            experience.
           </p>
         </div>
         <motion.div

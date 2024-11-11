@@ -36,7 +36,7 @@
   }
 
   .item-active {
-    background-color: var(--secondary-color);
+    background-color: var(--red-color);
     color: #fff;
   }
 }
@@ -125,7 +125,6 @@
     svg {
       width: 50%;
       height: 50%;
-      color: var(--white-color);
     }
   }
 }

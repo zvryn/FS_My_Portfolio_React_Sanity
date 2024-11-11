@@ -1,5 +1,5 @@
 .app__button {
-  background-color: #ff2c2c;
+  background-color: var(--red-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,7 @@
   height: 40px;
 
   &:hover {
-    background-color: #ff7e7e;
+    background-color: var(--hover-color);
   }
   a {
     text-decoration: none;

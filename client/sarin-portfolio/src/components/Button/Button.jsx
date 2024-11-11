@@ -4,7 +4,7 @@ import "./Button.scss";
 const Button = (props) => {
   return (
     <div className="app__button">
-      <a href="#">{props.name}</a>
+      <a href="#contact">{props.name}</a>
     </div>
   );
 };
