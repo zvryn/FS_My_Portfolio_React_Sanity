@@ -49,34 +49,39 @@ const Skills = () => {
           ))}
         </motion.div>
         <div className="app__skills-exp">
-          {experiences.map((experience) => (
-            <motion.div className="app__skills-exp-item" key={experience.year}>
-              <div className="app__skills-exp-year">
-                <p className="bold-text">{experience.year}</p>
-              </div>
-              <motion.div className="app__skills-exp-works">
-                {experience.works.map((work) => (
-                  <React.Fragment key={work.name}>
-                    <motion.div
-                      whileInView={{ opacity: [0, 1] }}
-                      transition={{ duration: 0.5 }}
-                      className="app__skills-exp-work"
-                      data-tip={work.desc}
-                      data-tooltip-id={work.name}
-                    >
-                      <h4 className="bold-text">{work.name}</h4>
-                      <p className="p-text" style={{ fontWeight: "300" }}>
-                        {work.company}
-                      </p>
-                      <p className="p-text" style={{ fontWeight: "100" }}>
-                        {work.desc}
-                      </p>
-                    </motion.div>
-                  </React.Fragment>
-                ))}
+          {experiences
+            .sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt))
+            .map((experience) => (
+              <motion.div
+                className="app__skills-exp-item"
+                key={experience.year}
+              >
+                <div className="app__skills-exp-year">
+                  <p className="bold-text">{experience.year}</p>
+                </div>
+                <motion.div className="app__skills-exp-works">
+                  {experience.works.map((work) => (
+                    <React.Fragment key={work.name}>
+                      <motion.div
+                        whileInView={{ opacity: [0, 1] }}
+                        transition={{ duration: 0.5 }}
+                        className="app__skills-exp-work"
+                        data-tip={work.desc}
+                        data-tooltip-id={work.name}
+                      >
+                        <h4 className="bold-text">{work.name}</h4>
+                        <p className="p-text" style={{ fontWeight: "300" }}>
+                          {work.company}
+                        </p>
+                        <p className="p-text" style={{ fontWeight: "100" }}>
+                          {work.desc}
+                        </p>
+                      </motion.div>
+                    </React.Fragment>
+                  ))}
+                </motion.div>
               </motion.div>
-            </motion.div>
-          ))}
+            ))}
         </div>
       </div>
     </>

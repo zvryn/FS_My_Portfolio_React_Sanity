@@ -112,7 +112,7 @@ const Work = () => {
 
               <div className="app__work-tag app__flex">
                 <p className="p-text" style={{ color: "black" }}>
-                  {work.tags[0]}
+                  {work.tags[1]}
                 </p>
               </div>
             </div>

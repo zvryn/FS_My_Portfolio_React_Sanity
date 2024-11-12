@@ -16,6 +16,12 @@ const experiences: SchemaTypeDefinition = {
       type: 'array',
       of: [{type: 'workExperience'}],
     },
+    {
+      name: 'createdAt',
+      title: 'Created At',
+      type: 'datetime',
+      initialValue: () => new Date().toISOString(),
+    },
   ],
 }
 
