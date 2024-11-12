@@ -7,7 +7,7 @@ import { BsInstagram, BsLinkedin } from "react-icons/bs";
 import "./Footer.scss";
 
 const RESUME_FILE_URL =
-  "https://drive.google.com/uc?export=download&id=1KUJNJPHniDuh6MzOcj5CDRMn-QtzTs5O";
+  "https://drive.google.com/uc?export=download&id=1UH2JrvbmbzBRZ4K1iW-nZ0cSIAs6dn1e";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
