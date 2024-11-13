@@ -15,6 +15,9 @@
 .app__navbar-logo {
   display: flex;
   font-size: x-large;
+  a {
+    text-decoration: none;
+  }
 }
 
 .app__navbar-links {
